@@ -21,13 +21,13 @@ const StripeTopUpForm = ({ onTopUp,closeForm }) => {
     if (error) {
       alert(error?.message);
     } else {
-      console.log("PaymentMethod created:", paymentMethod);
+      // console.log("PaymentMethod created:", paymentMethod);
       onTopUp(Amount);
       setAmount("");
     }
   }
 
-  console.log(Amount);
+  // console.log(Amount);
 
   return (
     <>
